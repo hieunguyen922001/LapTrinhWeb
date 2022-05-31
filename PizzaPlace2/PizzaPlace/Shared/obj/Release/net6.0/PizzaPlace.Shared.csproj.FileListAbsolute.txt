@@ -1,0 +1,12 @@
+C:\Users\Spring Cuong\source\repos\PizzaPlace\PizzaPlace\Shared\bin\Release\net6.0\PizzaPlace.Shared.deps.json
+C:\Users\Spring Cuong\source\repos\PizzaPlace\PizzaPlace\Shared\bin\Release\net6.0\PizzaPlace.Shared.dll
+C:\Users\Spring Cuong\source\repos\PizzaPlace\PizzaPlace\Shared\bin\Release\net6.0\PizzaPlace.Shared.pdb
+C:\Users\Spring Cuong\source\repos\PizzaPlace\PizzaPlace\Shared\obj\Release\net6.0\PizzaPlace.Shared.csproj.AssemblyReference.cache
+C:\Users\Spring Cuong\source\repos\PizzaPlace\PizzaPlace\Shared\obj\Release\net6.0\PizzaPlace.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Spring Cuong\source\repos\PizzaPlace\PizzaPlace\Shared\obj\Release\net6.0\PizzaPlace.Shared.AssemblyInfoInputs.cache
+C:\Users\Spring Cuong\source\repos\PizzaPlace\PizzaPlace\Shared\obj\Release\net6.0\PizzaPlace.Shared.AssemblyInfo.cs
+C:\Users\Spring Cuong\source\repos\PizzaPlace\PizzaPlace\Shared\obj\Release\net6.0\PizzaPlace.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Spring Cuong\source\repos\PizzaPlace\PizzaPlace\Shared\obj\Release\net6.0\PizzaPlace.Shared.dll
+C:\Users\Spring Cuong\source\repos\PizzaPlace\PizzaPlace\Shared\obj\Release\net6.0\refint\PizzaPlace.Shared.dll
+C:\Users\Spring Cuong\source\repos\PizzaPlace\PizzaPlace\Shared\obj\Release\net6.0\PizzaPlace.Shared.pdb
+C:\Users\Spring Cuong\source\repos\PizzaPlace\PizzaPlace\Shared\obj\Release\net6.0\ref\PizzaPlace.Shared.dll

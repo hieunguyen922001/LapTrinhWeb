@@ -1,0 +1,47 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<PizzaList Title="Danh sách Pizza"
+        Items="@State.Menu.Pizzas"
+        ButtonTitle="Order"
+        ButtonClass="btn btn-succsess pl-4 pr-4"
+        Selected="@AddToBasket"/>
+
+<ShoppingBasket Orders="@State.Basket.Orders"
+GetPizzaFromId="@State.Menu.GetPizza"
+Selected="@RemoveFromBasket"
+/>
+
+<CustomerEntry Title="Thông tin khách hàng"
+@bind-Customer="@State.Basket.Customer"
+ButtonTitle="Checkout"
+ButtonClass="mx-auto w-25 btn btn-success"
+ValidSubmit="PlaceOrder"
+/>
+
+@State.ToJson()
+@using PizzaPlace.Shared
+@inject IOrderService orderService
+@inject IMenuService MenuService
+@code{
+    private State State {get;} = new State();
+    protected override async Task OnInitializedAsync()
+    {
+        Menu menu = await MenuService.GetMenu();
+        foreach(Pizza pizza in menu.Pizzas)
+        {
+            State.Menu.Add(pizza);
+        }
+    }
+    private async Task PlaceOrder()
+    {
+        await orderService.PlaceOrder(State.Basket);
+    }
+    private string SpicinessImage(Spiciness spiciness)
+    => $"images/{spiciness.ToString().ToLower()}.png";
+    private void AddToBasket(Pizza pizza)
+    => State.Basket.Add(pizza.Id);
+    private void RemoveFromBasket(int pos)
+    => State.Basket.RemoveAt(pos);
+}
